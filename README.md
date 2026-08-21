@@ -11,7 +11,6 @@ This project demonstrates how Kubernetes resources such as:
 * ⚙️ ConfigMaps
 * 🚀 Deployments
 * 🌐 Services
-* 💾 Persistent Volumes / Claims
 * ☸️ Minikube
 * ⚖️ LoadBalancer
 
