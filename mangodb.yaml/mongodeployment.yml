@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-deploy
+  labels:
+    app: murthy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: murthy
+  template:
+    metadata:
+      labels:
+        app: murthy
+    spec:
+      containers:
+      - name: mongodbapp
+        image: mongo
+        ports:
+        - containerPort: 27017
+        env:
+        - name: MONGODB_INITDB_ROOT_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secret
+              key: mongo-root-username
+        - name: MONGODB_INITDB_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secret
+              key: mongo-root-password
