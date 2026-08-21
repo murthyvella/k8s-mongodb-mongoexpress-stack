@@ -1,6 +1,7 @@
 # k8s-mongodb-mongoexpress-stack
 🧑‍💻 Beginner-friendly Kubernetes hands-on lab to deploy MongoDB and Mongo Express on Minikube with Secrets, ConfigMaps, Deployments, Services, LoadBalancer, ClusterIP, and persistent storage(optional)
 # 🚀 MongoDB + Mongo Express on Minikube
+<img width="1536" height="1024" alt="ChatGPT Image Aug 21, 2026, 07_13_08 PM" src="https://github.com/user-attachments/assets/900c38bd-094c-433a-93a7-628c44cf28c8" />
 
 A beginner-friendly Kubernetes hands-on project to deploy **MongoDB** and **Mongo Express** inside a local **Minikube** cluster.
 
