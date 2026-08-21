@@ -1,13 +1,13 @@
 🐛 Troubleshooting
-Check Pod status
+#Check Pod status
 kubectl get pods
 
-If a Pod is not running:
+.If a Pod is not running:
 
 kubectl describe pod <pod-name>
 Check Pod logs
 
-MongoDB:
+#MongoDB:
 
 kubectl logs deployment/mongodb
 
@@ -19,7 +19,7 @@ kubectl get svc
 Check Service endpoints
 kubectl get endpoints
 
-If MongoDB Service has no endpoint, verify that the Service selector matches the MongoDB Pod labels.
+.If MongoDB Service has no endpoint, verify that the Service selector matches the MongoDB Pod labels.
 
 Check MongoDB Service DNS
 
